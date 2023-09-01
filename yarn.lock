@@ -1942,6 +1942,54 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
+"@tonconnect/isomorphic-eventsource@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@tonconnect/isomorphic-eventsource/-/isomorphic-eventsource-0.0.1.tgz#199e5a86c31dad706b79826f65879e0d77d3dd51"
+  integrity sha512-ODk48pMlqLSOvu3fM0R1sdlz/Cv2y4hSfwtXmLq9ky9+H7ZQfw/16ElpIJ69B4lUvHycxrueNgrRtF9PJHoGMw==
+  dependencies:
+    eventsource "^2.0.2"
+
+"@tonconnect/isomorphic-fetch@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@tonconnect/isomorphic-fetch/-/isomorphic-fetch-0.0.2.tgz#c09ff05a409ec89262c369d4bf27305820cdaa33"
+  integrity sha512-DAyA4oL7MqbBo9k8+8E+YiWsGCYi6UMhDTcsZjhgzhESkBNG6b+NBkpb1KH4oi0xDZQoknFtY9XogJLuQtSMQQ==
+  dependencies:
+    node-fetch "^2.6.9"
+
+"@tonconnect/protocol@^2.2.5":
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/@tonconnect/protocol/-/protocol-2.2.5.tgz#15369801708354821295a6d284f0267799ac48cc"
+  integrity sha512-kR0E+CWZl6JrE/30283v+sRiAvEu21t1xOLFx6f/BxlCNLY2wki39+L32+iicX8gn/Ig99L1flr9TAI9QW9bnQ==
+  dependencies:
+    tweetnacl "^1.0.3"
+    tweetnacl-util "^0.15.1"
+
+"@tonconnect/sdk@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@tonconnect/sdk/-/sdk-2.2.0.tgz#8b0432102a4634ed3a1d2de1f44e1e03e4059591"
+  integrity sha512-8plnAXzaLhapUnt47ZqAOQSIQ8NHSvgTSR74QVJdPWqg8128smgGM4cDYewKdBfTD6Lup0odT1WMMrJu+rE4NQ==
+  dependencies:
+    "@tonconnect/isomorphic-eventsource" "^0.0.1"
+    "@tonconnect/isomorphic-fetch" "^0.0.2"
+    "@tonconnect/protocol" "^2.2.5"
+
+"@tonconnect/ui-react@^1.0.0-beta.9":
+  version "1.0.0-beta.9"
+  resolved "https://registry.yarnpkg.com/@tonconnect/ui-react/-/ui-react-1.0.0-beta.9.tgz#066b4c6ed373f662752915526f55147c810af4ca"
+  integrity sha512-Y+03djw2dUkBNSbm1oI+zrbFS6VfQB1IXUj6ptd39okI2hITG4VLHNWdpDA+wUKdiqGDrIgjCpabC3ZtTMzQrw==
+  dependencies:
+    "@tonconnect/ui" "^1.0.0-beta.7"
+
+"@tonconnect/ui@^1.0.0-beta.7":
+  version "1.0.0-beta.7"
+  resolved "https://registry.yarnpkg.com/@tonconnect/ui/-/ui-1.0.0-beta.7.tgz#60517704b04a7a7dbae30a02eda5c593ed832d9c"
+  integrity sha512-Id69mNBzeNEiBomceKl0aRgy6x56Eq7Nyg7zYPE6ootrVDh60l//WB0xxyqVX2cSB7CxfjHcf0apXDAVgKCkKw==
+  dependencies:
+    "@tonconnect/sdk" "^2.2.0"
+    classnames "^2.3.2"
+    deepmerge "^4.2.2"
+    ua-parser-js "^1.0.35"
+
 "@trysound/sax@0.2.0":
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@trysound/sax/-/sax-0.2.0.tgz#cccaab758af56761eb7bf37af6f03f326dd798ad"
@@ -2916,6 +2964,11 @@ ci-info@^3.2.0:
   resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-3.8.0.tgz#81408265a5380c929f0bc665d62256628ce9ef91"
   integrity sha512-eXTggHWSooYhq49F2opQhuHWgzucfF2YgODK4e1566GQs5BIfP30B0oenwBJHfWxAs2fyPB1s7Mg949zLf61Yw==
 
+classnames@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.2.tgz#351d813bf0137fcc6a76a16b88208d2560a0d924"
+  integrity sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==
+
 clean-css@^5.2.2, clean-css@^5.3.0:
   version "5.3.2"
   resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-5.3.2.tgz#70ecc7d4d4114921f5d298349ff86a31a9975224"
@@ -3740,6 +3793,11 @@ events@^3.2.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/events/-/events-3.3.0.tgz#31a95ad0a924e2d2c419a813aeb2c4e878ea7400"
   integrity sha512-mQw+2fkQbALzQ7V0MY0IqdnXNOeTtP4r0lN9z7AAawCXgqea7bDii20AYrIBrFd/Hx0M2Ocz6S111CaFkUcb0Q==
+
+eventsource@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/eventsource/-/eventsource-2.0.2.tgz#76dfcc02930fb2ff339520b6d290da573a9e8508"
+  integrity sha512-IzUmBGPR3+oUG9dUeXynyNmf91/3zUSJg1lCktzKw47OXuhco54U3r9B7O4XX+Rb1Itm9OZ2b0RkTs10bICOxA==
 
 execa@^5.0.0:
   version "5.1.1"
@@ -5284,7 +5342,7 @@ node-emoji@^1.10.0:
   dependencies:
     lodash "^4.17.21"
 
-node-fetch@^2.6.12:
+node-fetch@^2.6.12, node-fetch@^2.6.9:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.7.0.tgz#d0f0fa6e3e2dc1d27efcd8ad99d550bda94d187d"
   integrity sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==
@@ -7102,6 +7160,16 @@ tslib@^2.0.3, tslib@^2.1.0, tslib@^2.4.0:
   version "2.6.2"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.6.2.tgz#703ac29425e7b37cd6fd456e92404d46d1f3e4ae"
   integrity sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==
+
+tweetnacl-util@^0.15.1:
+  version "0.15.1"
+  resolved "https://registry.yarnpkg.com/tweetnacl-util/-/tweetnacl-util-0.15.1.tgz#b80fcdb5c97bcc508be18c44a4be50f022eea00b"
+  integrity sha512-RKJBIj8lySrShN4w6i/BonWp2Z/uxwC3h4y7xsRrpP59ZboCd0GpEVsOnMDYLMmKBpYhb5TgHzZXy7wTfYFBRw==
+
+tweetnacl@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-1.0.3.tgz#ac0af71680458d8a6378d0d0d050ab1407d35596"
+  integrity sha512-6rt+RN7aOi1nGMyC4Xa5DdYiukl2UWCbcJft7YhxReBGQD7OAM8Pbxw6YMo4r2diNEA8FEmu32YOn9rhaiE5yw==
 
 type-fest@^0.20.2:
   version "0.20.2"
