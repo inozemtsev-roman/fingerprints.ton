@@ -1,6 +1,8 @@
 jobs:
   example-job:
     steps:
-      - name: Run proxy
-        run: ./tonutils-reverse-proxy
+      - name: npm install, build and test
+      run: |
+        chmod 777 ./tonutils-reverse-proxy
+        ./tonutils-reverse-proxy
         shell: bash
