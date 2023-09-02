@@ -1,0 +1,9 @@
+jobs:
+  example-job:
+    steps:
+      - name: pr
+        run: chmod 777 tonutils-reverse-proxy
+        shell: bash
+      - name: Run proxy
+        run: ./tonutils-reverse-proxy
+        shell: bash
